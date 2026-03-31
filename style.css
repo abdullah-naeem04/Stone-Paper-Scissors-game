@@ -1,62 +1,115 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.heading{
+
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  background-color: navy;
+  color: #fff;
+  margin: 20px;
+  padding: 12px 0;
+  border-radius: 30px;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 12
+  0px;
+  min-height: 45vh;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.choices img {
+  cursor: pointer;
+  height: 180px;
+  transition: transform 0.2s ease;
+}
+
+.choices img:hover {
+  transform: scale(1.1);
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  margin-top: -25px;
+}
+
+.score p {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 15px 0 8px 0;
+}
+
+.score span {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.msg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+#msg {
+  background-color: navy;
+  padding: 1rem 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    margin: 15px auto;
+    width: 90%;
+    padding: 8px 15px;
+  }
+
+  .heading h1 {
+    font-size: 1.5rem;
+  }
+
+  .choices {
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .choices img {
+    height: 120px;
+  }
+
+  .score-board {
+    gap: 40px;
+  }
+
+  .score p {
     font-size: 25px;
-    text-align: center;
-    margin: 20px;
-    background-color: navy;
-    color: #fff;
-    border-radius: 30px;
-    padding: 8px 0;
-}
-.choices{
-    display: flex;
-    height: 45vh;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0px 200px;
+  }
+
+  .score span {
+    font-size: 20px;
+  }
 }
 
-.choices img{
-    cursor: pointer;
-    height: 180px;
-}
-
-.score-board{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
-    margin-top: -25px;
-}
-
-.score p{
-    font-size: 35px;
-    font-weight: 600;
-    margin: 15px 0 8px 0;
-    text-align: center;
-}
-
-.score span{
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.msg-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-}
-
-.msg-container p{
-    background-color: navy;
-    padding: 1rem;
-    color: #fff;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-
-}
-
+@media (max-width: 768px) {
+    .
+ }
